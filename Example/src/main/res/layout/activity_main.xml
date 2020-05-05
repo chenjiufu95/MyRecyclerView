@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/super_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_shortcuts"
+        app:tabBackground="@color/transparent"
+        app:tabMode="fixed"
+        app:tabRippleColor="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+        <!--android:elevation="5dp">-->
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_shortcut_decoration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分隔线" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_shortcut_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布局切换" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/plug_shortcut_refresh_datas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/plug_shortcut_multiple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多选" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/plug_shortcut_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单选" />
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>
